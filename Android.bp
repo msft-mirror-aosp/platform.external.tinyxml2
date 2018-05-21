@@ -8,7 +8,10 @@ cc_library {
 
     srcs: ["tinyxml2.cpp"],
 
-    cflags: ["-Wall", "-Werror"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
 
     shared_libs: ["liblog"],
 
@@ -23,4 +26,13 @@ cc_library {
     },
 
     export_include_dirs: ["."],
+}
+
+cc_test {
+    name: "tinyxml2-tests",
+    srcs: ["xmltest.cpp"],
+    shared_libs: ["libtinyxml2"],
+    data: [
+        "resources/**/*",
+    ],
 }
