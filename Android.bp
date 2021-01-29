@@ -2,6 +2,7 @@ cc_library {
     name: "libtinyxml2",
     host_supported: true,
     vendor_available: true,
+    product_available: true,
     recovery_available: true,
     vndk: {
         enabled: true,
@@ -32,10 +33,21 @@ cc_library {
 }
 
 cc_test {
-    name: "tinyxml2-tests",
+    name: "tinyxml2-xmltest",
     srcs: ["xmltest.cpp"],
     shared_libs: ["libtinyxml2"],
     data: [
         "resources/**/*",
     ],
+}
+
+sh_test {
+    name: "tinyxml2-tests",
+    src: "run-tinyxml2-tests-on-android.sh",
+    filename: "run-tinyxml2-tests-on-android.sh",
+    test_suites: ["general-tests"],
+    host_supported: true,
+    device_supported: false,
+    require_root: true,
+    target_required: ["tinyxml2-xmltest"],
 }
