@@ -3,10 +3,5 @@
     {
       "name": "tinyxml2-tests"
     }
-  ],
-  "hwasan-postsubmit": [
-    {
-      "name": "tinyxml2-tests"
-    }
   ]
 }
