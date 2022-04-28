@@ -4,7 +4,7 @@
       "name": "tinyxml2-tests"
     }
   ],
-  "hwasan-postsubmit": [
+  "hwasan-presubmit": [
     {
       "name": "tinyxml2-tests"
     }
