@@ -27,6 +27,7 @@ license {
         "NOTICE",
     ],
 }
+
 // ...and prevent anyone from trying to do so:
 filegroup {
     name: "external_tinyxml2_docs",
@@ -67,7 +68,7 @@ cc_library {
             enabled: true,
             shared: {
                 enabled: false,
-            }
+            },
         },
     },
 
@@ -78,7 +79,8 @@ cc_library {
     apex_available: [
         "com.android.art",
         "com.android.art.debug",
-        "com.android.bluetooth",
+        "com.android.btservices",
+        "com.android.runtime", // used by linkerconfig
         "//apex_available:platform", // For odsign.
     ],
 }
