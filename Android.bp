@@ -63,6 +63,12 @@ cc_library {
                 "-DANDROID_NDK",
             ],
         },
+        windows: {
+            enabled: true,
+            shared: {
+                enabled: false,
+            }
+        },
     },
 
     export_include_dirs: ["."],
