@@ -13,7 +13,6 @@ license {
     ],
     license_text: [
         "LICENSE.txt",
-        "NOTICE",
     ],
 }
 
@@ -24,7 +23,6 @@ license {
     license_kinds: ["SPDX-license-identifier-GPL"],
     license_text: [
         "LICENSE.txt",
-        "NOTICE",
     ],
 }
 
