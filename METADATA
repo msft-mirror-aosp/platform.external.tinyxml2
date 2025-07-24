@@ -6,6 +6,9 @@ name: "tinyxml2"
 description: "TinyXML-2 is a simple, small, efficient, C++ XML parser that can be easily integrating into other programs."
 third_party {
   license_type: RESTRICTED
+  security {
+    tag: "NVD-CPE2.3:cpe:/a:tinyxml2_project:tinyxml2:10.0.0"
+  }
   last_upgrade_date {
     year: 2024
     month: 4
