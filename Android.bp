@@ -76,6 +76,7 @@ cc_library {
         "com.android.art.debug",
         "com.android.runtime", // used by linkerconfig
         "//apex_available:platform", // For odsign.
+        "com.android.neuralnetworks", // for procpartition.
     ],
 }
 
